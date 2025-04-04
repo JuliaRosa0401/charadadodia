@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ffe91e, #ff4a4a);
+    
+}
+
+.charada-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 10px;
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Alinhar os botões lado a lado */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Estilo para os botões Ver Resposta e Verificar Resposta */
+#verificar, #verRespostaBtn {
+    width: 48%; /* Os botões vão ocupar metade do espaço */
+}
+
+#verRespostaBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#verRespostaBtn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#verRespostaBtn:active {
+    background-color: #004085;
+    transform: translateY(2px);
+}
+
+#verificar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#verificar:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#verificar:active {
+    background-color: #1e7e34;
+    transform: translateY(2px);
+}
+
+/* Estilo específico para o botão Nova Charada */
+#novaCharada {
+    background-color: #c14266; /* Cor roxa */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#novaCharada:hover {
+    background-color: #9f2e6a; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px);
+}
+
+#novaCharada:active {
+    background-color: #7a1d5c; /* Cor de fundo ao clicar */
+    transform: translateY(2px);
+}
