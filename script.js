@@ -1,4 +1,4 @@
-const baseUrl = "https://charada-swart.vercel.app";
+const baseUrl = "https://charadas-ashen.vercel.app";
 const aleatorio = "/charadas";
 
 async function getCharada() {
