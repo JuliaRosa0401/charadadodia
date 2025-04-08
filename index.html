@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pensa Aí - Charadas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pensa Aí - Charadas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <div class="charada-box">
-        <h2>Pensa Aí 😀</h2>
-        <p class="text-dark">"Aqui aparecerá sua charada"</p>
-        <input type="text" class="form-control" id="respostaUsuario" placeholder="Digite sua resposta...">
-        <p id="resultado"></p>
-        <div class="button-container">
-            <button id="verificar" class="btn">Verificar</button>
-            <button id="verRespostaBtn" class="btn" style="display: none;">Resposta</button>
-        </div>
-        <button id="novaCharada" class="btn">Nova Charada</button>
+  <div class="charada-box">
+    <h2>Pensa Aí 😀</h2>
+    <p class="text-dark">"Aqui aparecerá sua charada"</p>
+    <p id="mensagemComemoracao" style="display: none;"></p>
+    <input type="text" class="form-control" id="respostaUsuario" placeholder="Digite sua resposta..." />
+    <p id="resultado"></p>
+    <div class="button-container">
+      <button id="verificar" class="btn">Verificar</button>
+      <button id="verRespostaBtn" class="btn" style="display: none;">Resposta</button>
     </div>
+    <button id="novaCharada" class="btn">Nova Charada</button>
+  </div>
 
-    <script src="script.js"></script>
+  <div id="placarBox">
+    <p id="placar">✅ Acertos: 0 | ❌ Erros: 0</p>
+    <button id="resetPlacar">🔄 Zerar Placar</button>
+    <button id="toggleRanking">🏆 Ver Ranking</button>
+  </div>
+
+  <div id="timerBox">
+    <button id="ativarTimer">⏳ Ativar Timer</button>
+    <span id="cronometro" style="display:none;">⏱ 30s</span>
+  </div>
+
+  <div id="rankingBox" style="display: none;">
+    <h5>🏆 Ranking Local</h5>
+    <ul id="rankingLista"></ul>
+    <input type="text" id="nomeJogador" placeholder="Seu nome..." class="form-control mb-2" />
+    <button id="salvarRanking" class="btn">Salvar no Ranking</button>
+    <button id="fecharRanking" class="btn btn-secondary">Fechar</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

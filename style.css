@@ -127,3 +127,136 @@ body {
     background-color: #7a1d5c; /* Cor de fundo ao clicar */
     transform: translateY(2px);
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  #placarBox {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 9999;
+    text-align: center;
+    min-width: 200px;
+  }
+  
+  #placarBox {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 9999;
+    min-width: 220px;
+    text-align: center;
+  }
+  
+  #placarBox button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    background-color: #ffffff;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #placarBox button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  #timerBox {
+    position: fixed;
+    top: 130px; /* ⬅️ ajustado para dar mais espaço entre os blocos */
+    left: 10px;
+    background-color: #fff;
+    padding: 12px;
+    border: 2px solid #ccc; /* mesma borda do placar para uniformidade */
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 9999;
+    min-width: 220px;
+    text-align: center;
+  }
+  
+  #timerBox button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    background-color: #ffffff;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #timerBox button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  #timerBox span {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.95rem;
+  }
+
+ #rankingBox {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #f8f9fa;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 9999;
+  width: 250px;
+  text-align: center;
+}
+
+#rankingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#rankingBox button {
+  margin-top: 6px;
+  background-color: #ffffff;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+#rankingBox button:hover {
+  background-color: #e6e6e6;
+}
+
+.ranking-item {
+  padding: 4px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
