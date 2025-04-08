@@ -10,7 +10,7 @@ async function getCharada() {
         const charadaJson = await response.json();
 
         document.querySelector(".text-dark").textContent = charadaJson.pergunta;
-        window.respostaAtual = charadaJson.reposta.toLowerCase().trim();
+        window.respostaAtual = charadaJson.resposta.toLowerCase().trim();
 
         document.querySelector("#respostaUsuario").value = "";
         document.querySelector("#resultado").textContent = "";
